@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="flags.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="countries-dropdown">
+    </div>
+
+    <script src="jquery.flagstrap.js"></script>
+    <script type="text/javascript">
+    $('#countries-dropdown').flagStrap({
+     countries: {
+         "GB": "United Kingdom",
+         "IT": "Italia"
+     },
+     buttonSize: "btn-sm",
+     buttonType: "btn-info",
+     labelMargin: "10px",
+     scrollable: false,
+     scrollableHeight: "350px"
+    });
+    </script>
+  </body>
+</html>
